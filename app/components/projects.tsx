@@ -20,7 +20,7 @@ export function Projects() {
     {
       title: "Portfolio Website",
       description: "This website you're looking at",
-      link: "https://www.westonclark.dev/",
+      link: "https://github.com/westonclark/personal-website-v2",
     },
   ];
 
