@@ -5,9 +5,9 @@ import { Projects } from "./components/projects";
 export default function Page() {
   return (
     <section className="flex flex-col gap-y-8">
-        <About />
-        <Experience />
-        <Projects />
+      <About />
+      <Experience />
+      <Projects />
     </section>
   );
 }
