@@ -9,7 +9,7 @@ export function About() {
         Audio Engineer based in Portland, OR.
       </p>
       <p>
-        When I'm not coding, &#128187; (which isn't often) you can find me
+        When I'm not coding &#128187; (which isn't often), you can find me
         <Link
           target="_blank"
           rel="noopener noreferrer"
@@ -17,9 +17,9 @@ export function About() {
           href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
         >
           {" "}
-          recording music
+          recording music{" "}
         </Link>
-        , &#127899; watching reruns of Survivor, &#127796; or buried deep in the
+        &#127899;, watching reruns of Survivor &#127796;, or buried deep in the
         latest{" "}
         <Link
           target="_blank"
@@ -28,7 +28,7 @@ export function About() {
           href="https://www.goodreads.com/user/show/158954021-weston-clark"
         >
           {" "}
-          fantasy novel
+          fantasy novel{" "}
         </Link>
         &#128214;.
       </p>
