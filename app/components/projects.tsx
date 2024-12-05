@@ -5,7 +5,7 @@ export function Projects() {
     {
       title: "The Thrify Nickel",
       description: "Full Stack E-Commerce Store",
-      link: "/",
+      link: "https://github.com/westonclark/digital-hippo",
     },
     {
       title: "Fader Keys",
