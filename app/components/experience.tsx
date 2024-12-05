@@ -1,0 +1,38 @@
+import Link from 'next/link'
+
+export function Experience() {
+  let experience = [
+    {dates: "May 2024 - Present", title: "Software Engineer II", company: "Madwire", link: "https://www.madwire.com/"},
+    {dates: "Feb 2023 - May 2024", title: "Software Engineer", company: "Watchdogs", link: "https://www.watch-dogs.io/"},
+    {dates: "Jan 2019 - Feb 2023", title: "Audio Software Installater", company: "Octane AVL", link: "https://www.octaneavl.com/portfolio"},
+    {dates: "Jan 2018 - Jan 2019", title: "Technical Director", company: "Westside AJC", link: "https://www.ajesuschurch.org/"},
+    {dates: "Oct 2014 - Dec 2017", title: "Audio Engineer", company: "Bethel Church Redding, CA", link: "https://www.bethel.com/"},
+
+]
+
+  return (
+    <div>
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+      Work Experience
+      </h1>
+      {experience
+        .map((job) => (
+          <Link
+            key={job.company}
+            className="flex flex-col space-y-1 mb-4"
+            target="_blank" rel="noopener noreferrer"
+            href={`${job.link}`}
+          >
+            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
+              <p className="text-neutral-600 dark:text-neutral-400  tabular-nums">
+                {job.dates}
+              </p>
+              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+                {job.title} - {job.company}
+              </p>
+            </div>
+          </Link>
+        ))}
+    </div>
+  )
+}
