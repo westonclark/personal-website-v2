@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Projects() {
   let experience = [
     {
-      title: "The Thrify Nickel",
+      title: "Digital Hippo",
       description: "Full Stack E-Commerce Store",
       link: "https://github.com/westonclark/digital-hippo",
     },
