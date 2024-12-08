@@ -18,6 +18,11 @@ export function Projects() {
       link: "https://github.com/westonclark/iPhone-Studio-Mic",
     },
     {
+      title: "Advent of Code",
+      description: "Advent of Code Challenge Solutions",
+      link: "https://github.com/westonclark/advent-of-code",
+    },
+    {
       title: "Portfolio Website",
       description: "This website you're looking at",
       link: "https://github.com/westonclark/personal-website-v2",
