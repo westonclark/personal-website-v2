@@ -35,8 +35,8 @@ export function Experience() {
   ];
 
   return (
-    <div>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+    <div className="mb-8">
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
         Work Experience
       </h1>
       {experience.map((job) => (

@@ -1,7 +1,6 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Inter } from 'next/font/google';
 import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -37,6 +36,11 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+  });
+
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
@@ -48,9 +52,8 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
-        GeistSans.variable,
-        GeistMono.variable,
+        "text-black bg-white dark:text-neutral-200 dark:bg-black",
+        inter.className,
       )}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto min-h-screen flex flex-col">

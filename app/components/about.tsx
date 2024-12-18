@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export function About() {
   return (
-    <div className="mb-4">
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About Me</h1>
-      <p className="mb-4">
+    <div className="mb-8">
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">About Me</h1>
+      <p className="mb-4 leading-relaxed">
         Hi! My name is Weston Clark and I'm a Backend Software Engineer and
         Audio Engineer based in Portland, OR.
       </p>

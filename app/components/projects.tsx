@@ -30,8 +30,8 @@ export function Projects() {
   ];
 
   return (
-    <div>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Projects</h1>
+    <div className="mb-8">
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Projects</h1>
       {experience.map((project) => (
         <Link
           key={project.title}
