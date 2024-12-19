@@ -29,7 +29,7 @@ export function Experience() {
     {
       dates: "Oct 2014 - Dec 2017",
       title: "Audio Engineer",
-      company: "Bethel Church Redding, CA",
+      company: "Bethel Church",
       link: "https://www.bethel.com/",
     },
   ];
@@ -47,12 +47,12 @@ export function Experience() {
           rel="noopener noreferrer"
           href={`${job.link}`}
         >
-          <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 group">
-            <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 group-hover:dark:text-neutral-100 transition tabular-nums">
-              {job.dates}
-            </p>
+          <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 group md:items-center">
             <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
               {job.title} - {job.company}
+            </p>
+            <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 group-hover:dark:text-neutral-100 text-sm transition tabular-nums">
+              {job.dates}
             </p>
           </div>
         </Link>

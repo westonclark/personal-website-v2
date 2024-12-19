@@ -40,11 +40,11 @@ export function Projects() {
           rel="noopener noreferrer"
           href={`${project.link}`}
         >
-          <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 group">
+          <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 group md:items-center">
             <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
               {project.title}
             </p>
-            <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 group-hover:dark:text-neutral-100 tabular-nums transition ">
+            <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 group-hover:dark:text-neutral-100 text-sm tabular-nums transition ">
               - {project.description}
             </p>
           </div>
