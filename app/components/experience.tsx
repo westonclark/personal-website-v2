@@ -37,7 +37,7 @@ export function Experience() {
   return (
     <div>
       <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
-        Work Experience
+        Experience
       </h1>
       {experience.map((job) => (
         <Link
