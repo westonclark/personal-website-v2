@@ -30,7 +30,7 @@ export function Projects() {
   ];
 
   return (
-    <div className="mb-8">
+    <div>
       <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Projects</h1>
       {experience.map((project) => (
         <Link

@@ -35,7 +35,7 @@ export function Experience() {
   ];
 
   return (
-    <div className="mb-8">
+    <div>
       <h1 className="mb-4 text-2xl font-semibold tracking-tighter">
         Work Experience
       </h1>
