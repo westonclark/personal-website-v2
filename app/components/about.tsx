@@ -5,8 +5,8 @@ export function About() {
     <div className="mb-4">
       <h1 className="mb-4 text-2xl font-semibold tracking-tighter">About</h1>
       <p className="mb-4 leading-relaxed">
-        My name is Weston Clark and I'm a Backend Software Engineer and
-        Audio Engineer based in Portland, OR.
+        My name is Weston Clark and I'm a Backend Software Engineer and Audio
+        Engineer based in Portland, OR.
       </p>
       <p>
         When I'm not coding &#128187; (which isn't often), you can find me

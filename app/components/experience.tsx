@@ -26,12 +26,6 @@ export function Experience() {
       company: "Westside AJC",
       link: "https://www.ajesuschurch.org/",
     },
-    {
-      dates: "Oct 2014 - Dec 2017",
-      title: "Audio Engineer",
-      company: "Bethel Church",
-      link: "https://www.bethel.com/",
-    },
   ];
 
   return (

@@ -1,6 +1,6 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
 };
 
 const inter = Inter({
-    subsets: ['latin'],
-    display: 'swap',
-  });
+  subsets: ["latin"],
+  display: "swap",
+});
 
-const cx = (...classes) => classes.filter(Boolean).join(" ");
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,

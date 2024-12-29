@@ -5,7 +5,10 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="flex flex-col gap-y-2 animate-fade-in" style={{ animationDelay: '100ms' }}>
+    <section
+      className="flex flex-col gap-y-2 animate-fade-in"
+      style={{ animationDelay: "100ms" }}
+    >
       <h1 className="font-semibold text-2xl mb-4 tracking-tighter">Contact</h1>
       <p>{`Feel free to reach out with any inquiries or questions.`}</p>
       <a

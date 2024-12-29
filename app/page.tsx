@@ -5,13 +5,13 @@ import { Projects } from "./components/projects";
 export default function Page() {
   return (
     <section className="flex flex-col gap-y-8">
-      <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
+      <div className="animate-fade-in" style={{ animationDelay: "100ms" }}>
         <About />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
+      <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
         <Experience />
       </div>
-      <div className="animate-fade-in" style={{ animationDelay: '300ms' }}>
+      <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
         <Projects />
       </div>
     </section>
