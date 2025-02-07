@@ -18,7 +18,7 @@ export function Experience() {
       dates: "Jan 2019 - Feb 2023",
       title: "Audio Software Engineer",
       company: "Octane AVL",
-      link: "https://www.octaneavl.com/portfolio",
+      link: "https://www.octaneavl.com/",
     },
     {
       dates: "Jan 2018 - Jan 2019",
