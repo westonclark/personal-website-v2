@@ -9,13 +9,13 @@ export function Projects() {
     },
     {
       title: "Fader Keys",
-      description: "DAW Virtual MIDI Controller",
+      description: "Virtual MIDI Fader Control Application",
       link: "https://github.com/westonclark/fader-keys",
     },
     {
-      title: "iPhone Studio Mic",
-      description: "Mobile Recording iPhone App",
-      link: "https://github.com/westonclark/iPhone-Studio-Mic",
+      title: "Fader Keys - Website",
+      description: "Online store for Purchasing Fader Keys",
+      link: "https://www.faderkeys.com",
     },
     {
       title: "Advent of Code",
