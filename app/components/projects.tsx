@@ -4,7 +4,7 @@ export function Projects() {
     let experience = [
         {
             title: "Fader Keys - Website",
-            description: "Homepage for purchasing the Fader Keys desktop application",
+            description: "Homepage for purchasing Fader Keys",
             link: "https://www.faderkeys.com",
         },
         {
