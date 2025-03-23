@@ -4,7 +4,7 @@ export function Projects() {
     let experience = [
         {
             title: "Fader Keys - Website",
-            description: "Homepage for purchasing Fader Keys",
+            description: "Landing page for Fader Keys",
             link: "https://www.faderkeys.com",
         },
         {
@@ -18,8 +18,8 @@ export function Projects() {
             link: "https://github.com/westonclark/digital-hippo",
         },
         {
-            title: "Convolution Reverb Plugin",
-            description: "Convolution Reverb Plugin",
+            title: "Convolution Reverb",
+            description: "Convolution Reverb Audio Plugin",
             link: "https://github.com/westonclark/convolution-processor",
         },
     ];
