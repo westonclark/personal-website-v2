@@ -13,20 +13,20 @@ export function Projects() {
             link: "https://github.com/westonclark/fader-keys",
         },
         {
+            title: "Convolution Reverb",
+            description: "Convolution Reverb Plugin",
+            link: "https://github.com/westonclark/convolution-processor",
+        },
+        {
             title: "Digital Hippo",
             description: "Full Stack E-Commerce Store",
             link: "https://github.com/westonclark/digital-hippo",
-        },
-        {
-            title: "Convolution Reverb",
-            description: "Convolution Reverb Audio Plugin",
-            link: "https://github.com/westonclark/convolution-processor",
         },
     ];
 
     return (
         <div>
-            <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Projects</h1>
+            <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Personal Projects</h1>
             {experience.map((project) => (
                 <Link
                     key={project.title}

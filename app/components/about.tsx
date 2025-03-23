@@ -9,7 +9,7 @@ export function About() {
                 Engineer based in Portland, OR.
             </p>
             <p>
-                When I'm not coding &#128187; (which isn't often), you can find me
+                When I'm not coding &#128187;, you can find me
                 <Link
                     target="_blank"
                     rel="noopener noreferrer"
