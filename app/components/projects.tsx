@@ -10,7 +10,7 @@ export function Projects() {
     },
     {
       title: "Fader Keys",
-      description: "A virtual MIDI fader controller for ProTools / Logic Pro X",
+      description: "A virtual MIDI fader controller for ProTools / Logic Pro",
       technologies: ["C++", "Objective-C++", "MIDI HUI Protocol"],
       link: "https://github.com/westonclark/fader-keys",
     },
