@@ -1,50 +1,73 @@
 import Link from "next/link";
 
 export function Projects() {
-    let experience = [
-        {
-            title: "Fader Keys - Website",
-            description: "Landing page for Fader Keys",
-            link: "https://www.faderkeys.com",
-        },
-        {
-            title: "Fader Keys - Application",
-            description: "Virtual MIDI Fader Controller",
-            link: "https://github.com/westonclark/fader-keys",
-        },
-        {
-            title: "Convolution Reverb",
-            description: "Convolution Reverb Plugin",
-            link: "https://github.com/westonclark/convolution-processor",
-        },
-        {
-            title: "Digital Hippo",
-            description: "Full Stack E-Commerce Store",
-            link: "https://github.com/westonclark/digital-hippo",
-        },
-    ];
+  let experience = [
+    {
+      title: "www.faderkeys.com",
+      description: "Homepage for purchasing and installing Fader Keys",
+      technologies: ["Next.js", "PostgreSQL", "Stripe", "Clerk"],
+      link: "https://www.faderkeys.com",
+    },
+    {
+      title: "Fader Keys",
+      description: "A virtual MIDI fader controller for ProTools / Logic Pro X",
+      technologies: ["C++", "Objective-C++", "MIDI HUI Protocol"],
+      link: "https://github.com/westonclark/fader-keys",
+    },
+    {
+      title: "Digital Hippo",
+      description: "A full stack e-commerce store",
+      technologies: ["TypeScript", "tRPC", "Stripe", "Payload CMS"],
+      link: "https://github.com/westonclark/digital-hippo",
+    },
+    {
+      title: "Convolution Reverb",
+      description: "A convolution reverb plugin for sampling acoustic spaces",
+      technologies: ["C++", "JUCE", "Xcode build tools"],
+      link: "https://github.com/westonclark/convolution-processor",
+    },
+    {
+      title: "Personal Website",
+      description: "The website that you're looking at right now.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      link: "https://github.com/westonclark/personal-website-v2",
+    },
+  ];
 
-    return (
-        <div>
-            <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Personal Projects</h1>
-            {experience.map((project) => (
-                <Link
-                    key={project.title}
-                    className="flex flex-col space-y-1 mb-4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={`${project.link}`}
+  return (
+    <div className="w-full">
+      <div className="flex flex-col space-y-2 mb-8">
+        <h1 className="text-3xl font-bold tracking-tighter">Projects</h1>
+        <div className="h-px w-16 bg-neutral-200 dark:bg-neutral-800"></div>
+      </div>
+      {experience.map((project) => (
+        <Link
+          key={project.title}
+          className="flex flex-col mb-8 group"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`${project.link}`}
+        >
+          <div className="flex flex-col space-y-2">
+            <p className="text-neutral-900 dark:text-neutral-100 tracking-tight font-medium">
+              {project.title}
+            </p>
+            <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-700 group-hover:dark:text-neutral-300 text-sm transition-colors">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech) => (
+                <span
+                  key={tech}
+                  className="text-xs px-2 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full"
                 >
-                    <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 group md:items-center">
-                        <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                            {project.title}
-                        </p>
-                        <p className="text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-900 group-hover:dark:text-neutral-100 text-sm tabular-nums transition ">
-                            - {project.description}
-                        </p>
-                    </div>
-                </Link>
-            ))}
-        </div>
-    );
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
 }
