@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <section className="flex flex-col h-full">
       <div
-        className="pt-24 mb-36 md:mb-0 md:min-h-screen md:pt-0 flex items-center justify-center animate-fade-in"
+        className="pt-36 mb-36 md:mb-0 md:min-h-screen md:pt-0 flex items-center justify-center animate-fade-in"
         style={{ animationDelay: "100ms" }}
       >
         <About />
