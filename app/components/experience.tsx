@@ -12,11 +12,11 @@ export function Experience() {
     },
     {
       dates: "Feb 2023 - May 2024",
-      title: "Full Stack Software Engineer",
-      company: "Watchdogs",
-      description: "Founding engineer of the real-time observability platform for AWS Lambda functions",
+      title: "Full Stack Engineer",
+      company: "Watchdogs (OS Labs)",
+      description: "Lead the design and development of the open source observability platform for viewing AWS Lambda function metrics",
       technologies: ["React.js", "Express.js", "AWS-SDK", "Redis"],
-      link: "https://github.com/westonclark/Watchdogs",
+      link: "https://github.com/oslabs-beta/Watchdogs",
     },
     {
       dates: "Jan 2019 - Feb 2023",
