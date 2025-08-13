@@ -17,9 +17,9 @@ export function Projects() {
       link: "https://www.faderkeys.com",
     },
     {
-      title: "Convolution Reverb",
+      title: "Convolution Reverb Processor",
       description:
-        "A convolution reverb plugin for sampling and emulating acoustic spaces",
+        "A convolution reverb plugin for sampling and recreating acoustic spaces",
       technologies: ["C++", "JUCE", "Xcode Build Tools"],
       link: "https://github.com/westonclark/convolution-processor",
     },
