@@ -3,33 +3,30 @@ import Link from "next/link";
 export function Projects() {
   let experience = [
     {
-      title: "www.faderkeys.com",
-      description: "Homepage for purchasing and installing Fader Keys",
-      technologies: ["Next.js", "PostgreSQL", "Stripe", "Clerk"],
-      link: "https://www.faderkeys.com",
-    },
-    {
       title: "Fader Keys",
-      description: "A virtual MIDI fader controller for ProTools / Logic Pro",
-      technologies: ["C++", "Objective-C++", "MIDI HUI Protocol"],
+      description:
+        "A virtual fader controller for virtually any audio recording software",
+      technologies: ["C++", "JUCE", "Objective-C++", "MIDI HUI Protocol"],
       link: "https://github.com/westonclark/fader-keys",
     },
     {
-      title: "Digital Hippo",
-      description: "A full stack e-commerce store",
-      technologies: ["TypeScript", "tRPC", "Stripe", "Payload CMS"],
-      link: "https://github.com/westonclark/digital-hippo",
+      title: "Fader Keys Website",
+      description:
+        "Homepage for purchasing and installing the Fader Keys application",
+      technologies: ["Next.js", "PostgreSQL", "NeonDB", "Stripe", "Clerk"],
+      link: "https://www.faderkeys.com",
     },
     {
       title: "Convolution Reverb",
-      description: "A convolution reverb plugin for sampling acoustic spaces",
-      technologies: ["C++", "JUCE", "Xcode build tools"],
+      description:
+        "A convolution reverb plugin for sampling and emulating acoustic spaces",
+      technologies: ["C++", "JUCE", "Xcode Build Tools"],
       link: "https://github.com/westonclark/convolution-processor",
     },
     {
       title: "Personal Website",
-      description: "The website that you're looking at right now.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      description: "This website that you're looking at right now.",
+      technologies: ["Vercel", "Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/westonclark/personal-website-v2",
     },
   ];

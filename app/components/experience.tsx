@@ -6,32 +6,50 @@ export function Experience() {
       dates: "May 2024 - Present",
       title: "Software Engineer II",
       company: "Madwire",
-      description: "Developing critical shared services including the core-api that manages authentication and permissions for all accounts and user data.",
-      technologies: ["Node.js", "TypeScript", "MySQL", "Docker", "Keycloak"],
+      description:
+        "Developing on critical infrastructure including the central apis that manage authentication and permissions for all accounts and user data.",
+      technologies: [
+        "TypeScript",
+        "Go",
+        "MySQL",
+        "Docker",
+        "Kubernetes",
+        "Keycloak",
+      ],
       link: "https://www.madwire.com/",
     },
     {
       dates: "Feb 2023 - May 2024",
       title: "Full Stack Engineer",
       company: "Watchdogs (OS Labs)",
-      description: "Lead the design and development of the open source observability platform for viewing AWS Lambda function metrics",
-      technologies: ["React.js", "Express.js", "AWS-SDK", "Redis"],
+      description:
+        "Designed and developed all aspects of the open source observability platform for AWS Lambda function metrics",
+      technologies: ["React.js", "Express.js", "AWS", "Redis", "MongoDB"],
       link: "https://github.com/oslabs-beta/Watchdogs",
     },
     {
       dates: "Jan 2019 - Feb 2023",
       title: "Audio Systems Engineer",
       company: "Octane AVL",
-      description: "Designed, installed, and operated professional audio systems for live events and venue installations.",
-      technologies: ["DiGiCo", "Meyer Sound", "SMAART", "Protools", "Soundflow"],
+      description:
+        "Designed, deployed, and operated professional audio systems for live events and concert venue installations.",
+      technologies: [
+        "DiGiCo",
+        "Avid",
+        "Meyer Sound",
+        "D&B",
+        "L-Acoustics",
+        "SMAART",
+      ],
       link: "https://www.octaneavl.com/",
     },
     {
       dates: "Jan 2018 - Jan 2019",
       title: "Technical Director",
       company: "Westside AJC",
-      description: "Managed audio, video, and lighting systems for live productions and streaming broadcasts.",
-      technologies: ["Q-SYS", "Ableton Live", "Dante", "Resolume"],
+      description:
+        "Managed audio, video, and lighting systems for live productions and streaming broadcasts.",
+      technologies: ["Q-SYS", "Dante", "Ableton Live", "Resolume"],
       link: "https://www.ajesuschurch.org/",
     },
   ];
