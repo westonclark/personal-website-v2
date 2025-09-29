@@ -7,7 +7,7 @@ export default function Page() {
         <h1 className="text-xl md:text-2xl font-medium">Weston Clark</h1>
 
         <p className="leading-relaxed">
-          I am software engineer and an audio engineer. I currently work at
+          Hello, I am software engineer and an audio engineer. I currently work at
           Madwire where I work on shared services for the{" "}
           <Link
             target="_blank"
