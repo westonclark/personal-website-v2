@@ -1,23 +1,20 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-// import { Navbar } from "./components/nav";
+import { STIX_Two_Text } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Weston Clark - Software Engineer",
+    default: "Weston Clark",
     template: "%s | Weston Clark",
   },
-  description:
-    "Software engineer portfolio and personal website of Weston Clark.",
+  description: "Software engineer",
   openGraph: {
-    title: "Weston Clark - Software Engineer",
-    description: "Portfolio and personal website of Weston Clark.",
+    title: "Weston Clark",
+    description: "Software engineer",
     url: baseUrl,
     siteName: "Weston Clark",
     locale: "en_US",
@@ -36,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({
+const stixTwoText = STIX_Two_Text({
   subsets: ["latin"],
   display: "swap",
 });
@@ -52,16 +49,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-neutral-100 dark:text-neutral-200 dark:bg-neutral-950",
-        inter.className,
+        "text-neutral-800 dark:text-neutral-100 text-base",
+        stixTwoText.className,
       )}
     >
-      <body className="antialiased max-w-xl mx-4 lg:mx-auto min-h-screen flex flex-col">
-        <main className="flex-1 flex flex-col">
-          {/* <Navbar /> */}
-          {children}
-        </main>
-        <Footer />
+      <body className="antialiased bg-neutral-100 dark:bg-neutral-900 mx-auto px-8 py-16 md:px-16 md:py-60 md:max-w-2xl ">
+        <main className="">{children}</main>
         <Analytics />
         <SpeedInsights />
       </body>
