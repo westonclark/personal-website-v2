@@ -8,7 +8,7 @@ export default function Page() {
 
         <p className="leading-relaxed">
           Hello, I am software engineer and an audio engineer. I currently work at
-          Madwire where I work on shared services for the{" "}
+          Madwire where I develop shared services for the{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
