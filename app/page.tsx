@@ -7,7 +7,7 @@ export default function Page() {
         <h1 className="text-xl md:text-2xl font-medium">Weston Clark</h1>
 
         <p className="leading-relaxed">
-          Hello, I am software engineer and an audio engineer. I specialize in backend web development but I also enjoy writing real time audio DSP software and games.
+          Hello, I am software engineer and an audio engineer. I specialize in backend web development but also enjoy writing real time audio DSP software.
         </p>
 
         <p className="leading-relaxed">
