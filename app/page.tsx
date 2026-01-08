@@ -7,7 +7,7 @@ export default function Page() {
         <h1 className="text-xl md:text-2xl font-medium">Weston Clark</h1>
 
         <p className="leading-relaxed">
-          Hello, I'm software engineer and audio engineer. I specialize in
+          Hello, I'm a software engineer and audio engineer. I specialize in
           backend web development and also enjoy writing real time audio DSP
           software.
         </p>
@@ -48,7 +48,7 @@ export default function Page() {
             {" "}
             fantasy novel 📚
           </Link>
-          , or watching reruns of Survivor &#127965; .
+          , or watching reruns of Survivor&#127965;.
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
