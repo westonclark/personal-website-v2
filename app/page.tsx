@@ -7,13 +7,14 @@ export default function Page() {
         <h1 className="text-xl md:text-2xl font-medium">Weston Clark</h1>
 
         <p className="leading-relaxed">
-          Hello, I am software engineer and an audio engineer. I specialize in
-          backend web development but also enjoy writing real time audio DSP
+          Hello, I'm software engineer and audio engineer. I specialize in
+          backend web development and also enjoy writing real time audio DSP
           software.
         </p>
 
         <p className="leading-relaxed">
-          I currently work at Madwire where I develop shared services for the{" "}
+          I currently work at Madwire where I develop shared services and infra
+          for the{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -23,7 +24,7 @@ export default function Page() {
             {" "}
             Marketing 360®{" "}
           </Link>
-          digital marketing platform.
+          fleet of software products.
         </p>
 
         <p className="leading-relaxed">
