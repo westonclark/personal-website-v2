@@ -8,8 +8,7 @@ export default function Page() {
 
         <p className="leading-relaxed">
           Hello, I'm a software engineer and audio engineer. I specialize in
-          backend web development and also enjoy writing real time audio DSP
-          software.
+          backend web development but also write real time audio software.
         </p>
 
         <p className="leading-relaxed">
