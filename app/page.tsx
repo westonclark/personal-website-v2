@@ -9,8 +9,8 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          I'm a software engineer and audio engineer. I specialize in backend
-          web development and real-time audio processing software.
+          I am a software engineer and audio engineer and I specialize in
+          backend web development and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
