@@ -49,11 +49,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-neutral-800 dark:text-neutral-100 text-base",
+        "text-neutral-800 dark:text-amber-50/90 text-lg",
         stixTwoText.className,
       )}
     >
-      <body className="antialiased bg-neutral-100 dark:bg-neutral-900 mx-auto px-8 py-24 md:px-16 md:py-60 md:max-w-2xl ">
+      <body className="antialiased bg-[#f0efea] dark:bg-zinc-950 mx-auto px-8 py-24 md:px-16 md:py-60 md:max-w-2xl ">
         <main className="">{children}</main>
         <Analytics />
         <SpeedInsights />

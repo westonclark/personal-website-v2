@@ -4,20 +4,31 @@ export default function Page() {
   return (
     <section>
       <div className="flex flex-col gap-5">
-        <h1 className="text-xl md:text-2xl font-medium">Weston Clark</h1>
+        <h1 className="text-2xl md:text-4xl font-medium dark:text-white">
+          Weston Clark
+        </h1>
 
         <p className="leading-relaxed">
-          Hello, I'm a software engineer and audio engineer. I specialize in
-          backend web development but also write real time audio software.
+          I'm a software engineer and audio engineer. I specialize in backend
+          web development and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
-          I currently work at Madwire where I develop shared services and infra
-          for the{" "}
+          I currently work at
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 dark:text-blue-400"
+            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            href="https://www.madwire.com/"
+          >
+            {" "}
+            Madwire{" "}
+          </Link>
+          where I develop shared services and infra for the{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.marketing360.com"
           >
             {" "}
@@ -31,23 +42,23 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 dark:text-blue-400"
+            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
           >
             {" "}
-            recording music 🎵
+            recording music
           </Link>
           , reading a good
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 dark:text-blue-400"
+            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.goodreads.com/user/show/158954021-weston-clark"
           >
             {" "}
-            fantasy novel 📚
+            fantasy novel
           </Link>
-          , or watching reruns of Survivor&#127965;.
+          , or watching reruns of Survivor.
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
