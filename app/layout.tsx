@@ -49,7 +49,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-neutral-800 dark:text-amber-50/90 text-lg",
+        "text-neutral-800 dark:text-white text-lg",
         stixTwoText.className,
       )}
     >

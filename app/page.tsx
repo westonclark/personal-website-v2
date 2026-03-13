@@ -9,8 +9,9 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          I am a software engineer and audio engineer and I specialize in
-          backend web development and real-time audio processing software.
+          Hello,
+          I'm a software engineer and audio engineer and I specialize in building
+          backend web services as well as real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
@@ -24,7 +25,7 @@ export default function Page() {
             {" "}
             Madwire{" "}
           </Link>
-          where I develop shared services and infra for the{" "}
+          where I develop shared services for the{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -58,7 +59,7 @@ export default function Page() {
             {" "}
             fantasy novel
           </Link>
-          , or watching reruns of Survivor.
+          , or watching reruns of Survivor!
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
