@@ -39,7 +39,7 @@ export default function Page() {
         </p>
 
         <p className="leading-relaxed">
-          When I'm not writing code, I'm usually
+          When I'm not coding, I'm usually
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -58,8 +58,7 @@ export default function Page() {
           >
             {" "}
             fantasy novel
-          </Link>
-          , or watching reruns of Survivor!
+          </Link>!
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
