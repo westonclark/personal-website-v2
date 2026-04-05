@@ -47,7 +47,7 @@ export default function Page() {
             href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
           >
             {" "}
-            recording music
+            recording music{" "}
           </Link>
           or reading a good
           <Link
