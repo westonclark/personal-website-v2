@@ -9,7 +9,7 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          Hello,
+          Hello!
           I'm a software engineer and audio engineer and I specialize in building
           backend web services as well as real-time audio processing software.
         </p>
@@ -49,7 +49,7 @@ export default function Page() {
             {" "}
             recording music
           </Link>
-          , reading a good
+          or reading a good
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -57,8 +57,8 @@ export default function Page() {
             href="https://www.goodreads.com/user/show/158954021-weston-clark"
           >
             {" "}
-            fantasy novel
-          </Link>!
+            fantasy novel!
+          </Link>
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
