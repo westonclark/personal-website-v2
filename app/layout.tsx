@@ -53,7 +53,7 @@ export default function RootLayout({
         stixTwoText.className,
       )}
     >
-      <body className="antialiased bg-[#f0efea] dark:bg-zinc-950 mx-auto px-8 py-24 md:px-16 md:py-60 md:max-w-2xl ">
+      <body className="antialiased bg-[#f0ede6] dark:bg-[#111110] mx-auto px-8 py-24 md:px-16 md:py-60 md:max-w-2xl ">
         <main className="">{children}</main>
         <Analytics />
         <SpeedInsights />

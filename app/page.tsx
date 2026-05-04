@@ -10,8 +10,8 @@ export default function Page() {
 
         <p className="leading-relaxed">
           Hello!
-          I'm a software engineer and audio engineer and I specialize in building
-          backend web services as well as real-time audio processing software.
+          I'm a software engineer and I specialize in building
+          backend services for the web and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
@@ -58,7 +58,7 @@ export default function Page() {
           >
             {" "}
             fantasy novel
-          </Link>!
+          </Link>
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
