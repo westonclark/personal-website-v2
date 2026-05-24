@@ -19,7 +19,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.madwire.com/"
           >
             {" "}
@@ -29,7 +29,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.marketing360.com"
           >
             {" "}
@@ -43,7 +43,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
           >
             {" "}
@@ -53,7 +53,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.goodreads.com/user/show/158954021-weston-clark"
           >
             {" "}
