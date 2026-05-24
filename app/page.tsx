@@ -9,7 +9,7 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          Hello!
+          Hello,
           I'm a software engineer and I specialize in building
           backend services for the web and real-time audio processing software.
         </p>
