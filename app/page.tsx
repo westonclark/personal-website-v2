@@ -35,7 +35,7 @@ export default function Page() {
             {" "}
             Marketing 360®{" "}
           </Link>
-          fleet of software products.
+          fleet of products.
         </p>
 
         <p className="leading-relaxed">
