@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <div className="flex flex-col gap-5">
-        <h1 className="text-2xl md:text-4xl font-medium dark:text-white">
+        <h1 className="text-2xl md:text-3xl font-medium dark:text-white">
           Weston Clark
         </h1>
 
@@ -19,7 +19,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.madwire.com/"
           >
             {" "}
@@ -29,7 +29,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.marketing360.com"
           >
             {" "}
@@ -43,7 +43,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
           >
             {" "}
@@ -53,7 +53,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 hover:text-amber-800 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-amber-800 hover:text-amber-900 dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="https://www.goodreads.com/user/show/158954021-weston-clark"
           >
             {" "}
@@ -61,7 +61,7 @@ export default function Page() {
           </Link>
           .
         </p>
-        <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
+        <div className="flex space-x-4 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
