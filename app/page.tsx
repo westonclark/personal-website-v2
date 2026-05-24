@@ -59,6 +59,7 @@ export default function Page() {
             {" "}
             fantasy novel
           </Link>
+          .
         </p>
         <div className="flex space-x-4 pt-2 text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
