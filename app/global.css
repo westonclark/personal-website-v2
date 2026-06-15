@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "highlight.js/styles/github.css" (prefers-color-scheme: light);
+@import "highlight.js/styles/github-dark.css" (prefers-color-scheme: dark);
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -8,8 +10,150 @@
 
 html {
   min-width: 360px;
+  overflow-x: hidden;
 }
 
 pre::-webkit-scrollbar {
   display: none;
+}
+
+  line-height: 1.68;
+}
+
+.prose-blog h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.prose-blog h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 0.4rem;
+  color: inherit;
+}
+
+.prose-blog h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+  color: inherit;
+}
+
+.prose-blog p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog ul {
+  list-style-type: disc;
+}
+
+.prose-blog ol {
+  list-style-type: decimal;
+}
+
+.prose-blog li {
+  margin-bottom: 0.35rem;
+}
+
+.prose-blog a {
+  color: #b5420a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+
+.prose-blog a:hover {
+  color: #963708;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog a {
+    color: #d97757;
+  }
+  .prose-blog a:hover {
+    color: #e08568;
+  }
+}
+
+.prose-blog code:not(pre code) {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.82em;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  padding: 0.15em 0.35em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog code:not(pre code) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.prose-blog pre {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  overflow-x: auto;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog pre {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.prose-blog pre code.hljs {
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog pre code.hljs {
+    background: transparent;
+    color: #abb2bf;
+  }
+}
+
+.prose-blog pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.prose-blog em {
+  font-style: italic;
+}
+
+.prose-blog strong {
+  font-weight: 600;
+}
+
+.prose-blog hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog hr {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
 }

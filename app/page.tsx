@@ -2,30 +2,19 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section>
+    <section className="pt-8 md:pt-36">
       <div className="flex flex-col gap-5">
-        <h1 className="text-2xl md:text-3xl font-medium dark:text-white">
+        <h1 className="text-xl md:text-2xl font-medium dark:text-white">
           Weston Clark
         </h1>
 
         <p className="leading-relaxed">
-          Hello,
-          I'm a software engineer and I specialize in building
-          backend services for the web and real-time audio processing software.
+          Hello, I'm a software engineer and audio engineer. I specialize in building
+          backend web services and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
-          I currently work at
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
-            href="https://www.madwire.com/"
-          >
-            {" "}
-            Madwire{" "}
-          </Link>
-          where I develop shared services for the{" "}
+          I currently work at Madwire where I develop shared services for the{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +24,14 @@ export default function Page() {
             {" "}
             Marketing 360®{" "}
           </Link>
-          fleet of products.
+          fleet of products. I'm also building an audio engine from scratch and documenting each step of the process, you can follow along{" "}
+          <Link
+            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            href="/writing"
+          >
+            here
+          </Link>
+          .
         </p>
 
         <p className="leading-relaxed">
@@ -76,6 +72,17 @@ export default function Page() {
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
+              href="https://www.linkedin.com/in/westoclark"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
+            >
+              LinkedIn
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-1">•</span>
+            <Link
               href="https://github.com/westonclark"
               target="_blank"
               rel="noopener noreferrer"
@@ -87,12 +94,10 @@ export default function Page() {
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
-              href="https://www.linkedin.com/in/westoclark"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/writing"
               className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
             >
-              LinkedIn
+              Writing
             </Link>
           </div>
         </div>
