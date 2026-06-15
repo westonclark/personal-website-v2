@@ -10,7 +10,7 @@ Welcome! In this series I will be writing an audio engine from scratch in C++. T
 
 ## About the Engine
 
-This will be a channel-based engine, much like a digital mixer. There will be a static set of processing effects for each "channel strip", starting out with just gain. Each channel will have a selectable input source (either audio file or hardware device) and all the channels will sum together into a stereo output bus, though eventually we will support more busses than just the master.
+This will be a channel-based engine, much like a digital mixer. There will be a static set of processing effects for each "channel strip", starting out with just gain. Each channel will have a selectable input source (either audio file or hardware device) and all the channels will sum together into a stereo output bus, though eventually we will support more busses than just the master. We will start off with one thread for the audio processing layer and one for the GUI user input layer. We will use `std::atomic` values to safely update values across the two. CoreAudio operates by passing buffers of samples through audio callback functions, so we will try to design the input nodes to the engine to be consistent with this pattern.
 
 ```
        ___________________       _____________________
