@@ -17,6 +17,7 @@ pre::-webkit-scrollbar {
   display: none;
 }
 
+.prose-blog {
   line-height: 1.68;
 }
 
