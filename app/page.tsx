@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section className="pt-8 md:pt-8">
       <div className="flex flex-col gap-5">
-        <h1 className="text-xl md:text-xl font-medium dark:text-white">
+        <h1 className="text-xl md:text-xl font-medium dark:text-white pb-2">
           Weston Clark
         </h1>
 
