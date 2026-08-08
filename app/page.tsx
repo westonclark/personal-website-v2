@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="pt-8 md:pt-36">
+    <section className="pt-8 md:pt-8">
       <div className="flex flex-col gap-5">
-        <h1 className="text-xl md:text-2xl font-medium dark:text-white">
+        <h1 className="text-xl md:text-xl font-medium dark:text-white">
           Weston Clark
         </h1>
 
