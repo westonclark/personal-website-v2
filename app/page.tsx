@@ -2,19 +2,19 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="pt-8 md:pt-8">
+    <section className="pt-8 md:pt-4 dark:text-neutral-300">
       <div className="flex flex-col gap-5">
         <h1 className="text-xl md:text-xl font-medium dark:text-white">
           Weston Clark
         </h1>
 
         <p className="leading-relaxed">
-          Hello, I'm a software engineer and audio engineer. I build backend
-          services for the web along with real-time audio processing software.
+          I'm a software developer living in Portland, OR. I build backend
+          services for the web and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
-          I currently work at Madwire where I develop shared services for the{" "}
+          I currently work at Madwire where I develop internal services for the{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -24,19 +24,19 @@ export default function Page() {
             {" "}
             Marketing 360®{" "}
           </Link>
-          fleet of products. I'm also building an audio engine from scratch and
-          documenting each step of the process, you can follow along{" "}
+          fleet of software products.
+        </p>
+
+        <p className="leading-relaxed">
+          In my free time, I've been building an audio mixing engine from
+          scratch and documenting{" "}
           <Link
             className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="/writing"
           >
-            here
+            each step of the process
           </Link>
-          .
-        </p>
-
-        <p className="leading-relaxed">
-          When I'm not coding, I'm usually
+          . When I'm not writing code, I'm usually
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Page() {
             {" "}
             recording music{" "}
           </Link>
-          or reading a good
+          or reading a
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -58,7 +58,8 @@ export default function Page() {
           </Link>
           .
         </p>
-        <div className="flex space-x-4 text-neutral-600 dark:text-neutral-300">
+
+        <div className="flex space-x-4 text-neutral-600 dark:text-neutral-300 pt-2">
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link

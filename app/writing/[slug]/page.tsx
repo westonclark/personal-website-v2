@@ -32,7 +32,7 @@ export default async function PostPage({
   if (!post) notFound();
 
   return (
-    <section>
+    <section className="dark:text-neutral-300">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-2">
           <Link

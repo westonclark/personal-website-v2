@@ -32,7 +32,7 @@ export default function BlogPage() {
   }
 
   return (
-    <section className="pt-8 md:pt-36">
+    <section className="pt-8 md:pt-4 dark:text-neutral-300">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-1">
           <h1 className="text-xl md:text-2xl font-medium dark:text-white">

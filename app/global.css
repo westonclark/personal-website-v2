@@ -29,6 +29,12 @@ pre::-webkit-scrollbar {
   color: inherit;
 }
 
+@media (prefers-color-scheme: dark) {
+  .prose-blog h2 {
+    color: white;
+  }
+}
+
 .prose-blog h3 {
   font-size: 1.05rem;
   font-weight: 600;
@@ -37,12 +43,24 @@ pre::-webkit-scrollbar {
   color: inherit;
 }
 
+@media (prefers-color-scheme: dark) {
+  .prose-blog h3 {
+    color: white;
+  }
+}
+
 .prose-blog h4 {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.4rem;
   color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-blog h4 {
+    color: white;
+  }
 }
 
 .prose-blog p {
