@@ -9,8 +9,8 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          Hello, I'm a software engineer and audio engineer. I specialize in building
-          backend web services and real-time audio processing software.
+          Hello, I'm a software engineer and audio engineer. I build backend
+          services for the web along with real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
@@ -24,7 +24,8 @@ export default function Page() {
             {" "}
             Marketing 360®{" "}
           </Link>
-          fleet of products. I'm also building an audio engine from scratch and documenting each step of the process, you can follow along{" "}
+          fleet of products. I'm also building an audio engine from scratch and
+          documenting each step of the process, you can follow along{" "}
           <Link
             className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="/writing"
@@ -61,25 +62,13 @@ export default function Page() {
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/writing"
               className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
             >
-              Resume
+              Writing
             </Link>
           </div>
-          <div className="flex items-center">
-            <span className="mr-1">•</span>
-            <Link
-              href="https://www.linkedin.com/in/westoclark"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
-            >
-              LinkedIn
-            </Link>
-          </div>
+
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
@@ -91,13 +80,28 @@ export default function Page() {
               GitHub
             </Link>
           </div>
+
           <div className="flex items-center">
             <span className="mr-1">•</span>
             <Link
-              href="/writing"
+              href="https://www.linkedin.com/in/westoclark"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
             >
-              Writing
+              LinkedIn
+            </Link>
+          </div>
+
+          <div className="flex items-center">
+            <span className="mr-1">•</span>
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center transition-colors duration-200 hover:text-black dark:hover:text-neutral-100"
+            >
+              Resume
             </Link>
           </div>
         </div>
