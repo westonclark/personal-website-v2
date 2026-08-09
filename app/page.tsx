@@ -29,14 +29,14 @@ export default function Page() {
 
         <p className="leading-relaxed">
           In my free time, I've been building an audio mixing engine from
-          scratch and documenting{" "}
+          scratch and{" "}
           <Link
             className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
             href="/writing"
           >
-            each step of the process
+            documenting
           </Link>
-          . When I'm not writing code, I'm usually
+          {" "}each step of the process . When I'm not writing code, I'm usually
           <Link
             target="_blank"
             rel="noopener noreferrer"
