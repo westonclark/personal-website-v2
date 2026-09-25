@@ -9,8 +9,8 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          I'm a software developer living in Portland, OR. I build backend
-          services for the web and real-time audio processing software.
+          I'm a software developer living in Portland, OR. I love building backend web
+          systems and real-time audio processing software.
         </p>
 
         <p className="leading-relaxed">
@@ -29,14 +29,8 @@ export default function Page() {
 
         <p className="leading-relaxed">
           In my free time, I've been building an audio mixing engine from
-          scratch and{" "}
-          <Link
-            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
-            href="/writing"
-          >
-            documenting
-          </Link>
-          {" "}each step of the process . When I'm not writing code, I'm usually
+          scratch and documenting each step of the process (see writing). When
+          I'm not writing code, I'm usually
           <Link
             target="_blank"
             rel="noopener noreferrer"
