@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section className="pt-8 md:pt-4 dark:text-neutral-300">
       <div className="flex flex-col gap-5">
-        <h1 className="text-xl md:text-xl font-medium dark:text-white">
+        <h1 className="text-[1.375rem] mb-3 font-medium dark:text-white">
           Weston Clark
         </h1>
 
@@ -18,7 +18,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#2456a6] hover:text-[#1a4283] dark:text-[#7ba7e8] dark:hover:text-[#9bbcf0] transition-colors"
             href="https://www.marketing360.com"
           >
             {" "}
@@ -34,7 +34,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#2456a6] hover:text-[#1a4283] dark:text-[#7ba7e8] dark:hover:text-[#9bbcf0] transition-colors"
             href="https://open.spotify.com/playlist/2TrlJn4BcZQ1PihCPDFEO3?si=11004ae8d8954ef4"
           >
             {" "}
@@ -44,7 +44,7 @@ export default function Page() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#b5420a] hover:text-[#963708] dark:text-[#d97757] dark:hover:text-[#e08568] transition-colors"
+            className="text-[#2456a6] hover:text-[#1a4283] dark:text-[#7ba7e8] dark:hover:text-[#9bbcf0] transition-colors"
             href="https://www.goodreads.com/user/show/158954021-weston-clark"
           >
             {" "}

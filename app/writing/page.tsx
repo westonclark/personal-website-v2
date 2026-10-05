@@ -52,7 +52,7 @@ export default function BlogPage() {
         <div className="flex flex-col gap-6">
           {Object.entries(bySeries).map(([series, seriesPosts]) => (
             <div key={series} className="flex flex-col gap-3">
-              <p className="text-[#b5420a] dark:text-[#d97757] text-base italic">
+              <p className="text-[#2456a6] dark:text-[#7ba7e8] text-base italic">
                 {series}
               </p>
               <div className="flex flex-col gap-3">

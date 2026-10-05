@@ -86,22 +86,22 @@ pre::-webkit-scrollbar {
 }
 
 .prose-blog a {
-  color: #b5420a;
+  color: #2456a6;
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.15s;
 }
 
 .prose-blog a:hover {
-  color: #963708;
+  color: #1a4283;
 }
 
 @media (prefers-color-scheme: dark) {
   .prose-blog a {
-    color: #d97757;
+    color: #7ba7e8;
   }
   .prose-blog a:hover {
-    color: #e08568;
+    color: #9bbcf0;
   }
 }
 
