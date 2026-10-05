@@ -10,7 +10,7 @@ Before I start building the engine, I need to be able to read a `.wav` file into
 
 ## The WAVE Format
 
-The WAVE file format is a subset of Microsoft's `RIFF` format. A file starts out with a `RIFF` header, followed by a sequence of chunks, typically a `fmt` chunk that describes the format of the data, and a `data` chunk containing the actual audio data. There may be additional chunks present too to store things like album artwork, artist/album/track names, or tempo/MIDI data.
+The WAVE file format is a subset of Microsoft's `RIFF` format. A file starts out with a `RIFF` header, followed by a sequence of chunks, typically a `fmt` chunk that describes the format of the data, and a `data` chunk containing the actual audio data. Other chunks can store things like album artwork, artist/album/track names, or tempo/MIDI data.
 
 The `RIFF` header is 12 bytes, and each chunk after has a 4-byte `chunkName`, a 4-byte `chunkSize`, then the actual chunk's data.
 
@@ -106,7 +106,7 @@ if (std::strcmp(chunkName, "fmt ") == 0) {
 
 ### The Data Chunk
 
-The audio data is stored as a bunch of samples one after another on disc. They are raw signed integers, 16, 24, or 32-bits wide. A 24-bit sample, for example, spans the range `-8388608` to `8388607`. The engine will be expecting 32-bit floats in the `-1` to `1` range, so for each sample we need to copy it into a 32-bit container, fix the sign, and normalize it to a float. Now that we know `bitsPerSample` from the `fmt` chunk, we know where one sample ends and the next starts.
+The audio data is a sequence of samples stored one after another on disk. They are raw signed integers, 16, 24, or 32-bits wide. A 24-bit sample, for example, spans the range `-8388608` to `8388607`. The engine expects 32-bit floats in the `-1` to `1` range, so each sample must be copied into a 32-bit container, sign-fixed, and normalized to a float. Now that we know `bitsPerSample` from the `fmt` chunk, we know where one sample ends and the next starts.
 
 ```
      16-bit sample       16-bit sample      16-bit sample
@@ -141,7 +141,7 @@ if (std::strcmp(chunkName, "data") == 0) {
 }
 ```
 
-Now we can loop over each sample and process it. We will read all the bytes from the file into memory first, so that we are not doing a file read for each individual one, then we can start by copying each sample into a 4-byte integer.
+Now loop over each sample and process it. Read all the bytes from the file into memory first, so we're not doing a file read for each individual sample, then copy each sample into a 4-byte integer.
 
 ```c++
 std::vector<uint8_t> rawBytes(chunkSize);
@@ -174,7 +174,7 @@ When we copy a 16-bit or 24-bit signed integer into a 32-bit container, the sign
                               4 bytes
 ```
 
-We can do this with a bit shift. `<<` shifts every digit left one digit in binary. So we can shift everything left by the number of extra bits until the sign bit is all the way to the left, then shift it back right. When shifting right on a signed int, the CPU automatically fills the new leftmost bits with the sign.
+A bit shift handles this. `<<` shifts every digit left one digit in binary, so shifting everything left by the number of extra bits pushes the sign bit all the way to the left, then shifting it back right restores it. When shifting right on a signed int, the CPU automatically fills the new leftmost bits with the sign.
 
 ```c++
 int numExtraBits = 32 - bitsPerSample;
@@ -183,7 +183,7 @@ int32_t sample = (int32_t)(rawValue << numExtraBits) >> numExtraBits;
 
 #### Normalization
 
-Now we have to normalize the values to be within the `-1` to `1` range instead of the raw integer representation. To make sure we end up with the same ratio between the values after conversion, we need to multiply each value by a `normalizationScale` that captures the ratio of `newMax / oldMax`.
+The values now need to be normalized to the `-1` to `1` range instead of the raw integer representation. To preserve the same ratio between values after conversion, each value is multiplied by a `normalizationScale` that captures the ratio of `newMax / oldMax`.
 
 The `newMax` will be `1`, and we can calculate the `oldMax` with `2^(bitsPerSample - 1)`. We subtract one bit to account for the signed bit which is only used to determine `+` or `-`. We also need to account for there being one more possible negative value in the integer range. We can do this by adding `1` to our old `oldMax` so it's an even ratio.
 

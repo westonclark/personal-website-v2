@@ -6,11 +6,11 @@ series: "Building An Audio Engine"
 part: 0
 ---
 
-Welcome! In this series I will be writing an audio engine from scratch in C++. The goal is to use zero dependencies or external libraries and do everything by hand. I want to handle the audio samples all the way from the input source through the engine to the output device. I will start out only supporting MacOS with CoreAudio, but I will eventually support Windows and Linux in the future.
+Welcome! In this series I'm building an audio engine from scratch in C++. Almost zero dependencies, everything by hand. The engine will handle the audio samples end-to-end. I'll start off supporting macOS with CoreAudio integration, then add Windows and Linux later.
 
 ## About the Engine
 
-This will be a channel-based engine, much like a digital mixer. There will be a static set of processing effects for each "channel strip", starting out with just gain. Each channel will have a selectable input source (either audio file or hardware device) and all the channels will sum together into a stereo output bus, though eventually we will support more busses than just the master.
+This will be a channel-based engine, much like a digital mixer. Each channel strip has a static set of processing effects, starting with just gain. Each channel has a selectable input source — an audio file or a hardware device — and all channels sum into a stereo output bus. Eventually there will be more busses than just the master.
 
 ```
        ___________________       _____________________
@@ -29,4 +29,4 @@ This will be a channel-based engine, much like a digital mixer. There will be a 
                       ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 ```
 
-We will start off with one thread for the audio processing layer and one for the GUI user input layer. We will use `std::atomic` values to safely update values across the two. CoreAudio operates by passing buffers of samples through audio callback functions, so we will try to design the input nodes to the engine to be consistent with this pattern.
+I'll start with a few different threads. One for audio processing, one for GUI input, one for reading audio samples from disc into a temp buffer. Planning on keeping the audio thread real time safe with `std::atomic` values. CoreAudio passes buffers of samples through audio callback functions, so the input nodes are designed around that same pattern for file input.
