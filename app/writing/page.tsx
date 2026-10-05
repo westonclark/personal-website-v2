@@ -52,7 +52,7 @@ export default function BlogPage() {
         <div className="flex flex-col gap-6">
           {Object.entries(bySeries).map(([series, seriesPosts]) => (
             <div key={series} className="flex flex-col gap-3">
-              <p className="text-[#2456a6] dark:text-[#7ba7e8] text-base italic">
+              <p className="text-neutral-500 dark:text-neutral-400 text-base italic">
                 {series}
               </p>
               <div className="flex flex-col gap-3">
@@ -69,7 +69,7 @@ export default function BlogPage() {
                       </span>
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="flex items-baseline gap-3 flex-wrap">
-                          <span className="group-hover:text-neutral-500 dark:group-hover:text-neutral-300 transition-colors">
+                          <span className="text-[#2456a6] group-hover:text-[#1a4283] dark:text-[#7ba7e8] dark:group-hover:text-[#9bbcf0] transition-colors">
                             {post.title}
                           </span>
                           <span className="text-neutral-400 dark:text-neutral-500 text-sm shrink-0">
@@ -99,7 +99,7 @@ export default function BlogPage() {
               </span>
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="flex items-baseline gap-3 flex-wrap">
-                  <span className="group-hover:text-neutral-500 dark:group-hover:text-neutral-300 transition-colors">
+                  <span className="text-[#2456a6] group-hover:text-[#1a4283] dark:text-[#7ba7e8] dark:group-hover:text-[#9bbcf0] transition-colors">
                     {post.title}
                   </span>
                   <span className="text-neutral-400 dark:text-neutral-500 text-sm shrink-0">
