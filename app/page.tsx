@@ -9,7 +9,7 @@ export default function Page() {
         </h1>
 
         <p className="leading-relaxed">
-          I'm a software developer living in Portland, OR. I love building backend web
+          Hello! I'm a software developer living in Portland, OR. I love building backend web
           systems and real-time audio processing software.
         </p>
 
