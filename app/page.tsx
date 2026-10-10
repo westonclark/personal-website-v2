@@ -28,9 +28,17 @@ export default function Page() {
         </p>
 
         <p className="leading-relaxed">
-          In my free time, I've been building an audio mixing engine from
-          scratch and documenting each step of the process (see writing). When
-          I'm not writing code, I'm usually
+          I've been building an{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#2456a6] hover:text-[#1a4283] dark:text-[#7ba7e8] dark:hover:text-[#9bbcf0] transition-colors"
+            href="https://github.com/westonclark/audio-engine"
+          >
+            audio mixing engine
+          </Link>{" "}
+          from scratch and documenting each step of the process (see writing).
+          When I'm not writing code, I'm usually
           <Link
             target="_blank"
             rel="noopener noreferrer"
